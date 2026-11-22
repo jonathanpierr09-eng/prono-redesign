@@ -113,55 +113,22 @@ footer{font-size:11px;color:var(--host-fg-muted);margin-top:20px;border-top:1px 
 @media(max-width:520px){.esport-frame{height:620px}.modes .mode{flex:1 1 42%}}
 
 
-/* PRONO — dark luminous / bordeaux refresh */
+/* PRONO dark luminous + bordeaux */
 :root{--host-fg:#f5f1f4;--host-fg-muted:#a99ba4;--host-card:#17131a;--host-input:#100e14;--host-border:#382431;--host-primary:#b51f4b;--host-muted:#24151e;--host-border-hover:#79314c}
-html{background:#09080d;scroll-behavior:smooth}
-body{background:radial-gradient(ellipse at 50% -15%,rgba(109,23,53,.34),transparent 48%),#09080d;color:var(--host-fg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;min-height:100vh}
-.wrap{max-width:1120px;padding:34px 24px 76px}
-header{padding:26px 28px;margin-bottom:22px;border:1px solid rgba(181,31,75,.32);border-radius:22px;background:linear-gradient(120deg,rgba(109,23,53,.28),rgba(23,19,26,.94) 58%),#17131a;box-shadow:0 18px 55px rgba(0,0,0,.28),inset 0 1px rgba(255,255,255,.04)}
-header h1{font-size:clamp(27px,4vw,38px);font-weight:800;letter-spacing:-1.2px;margin:0 0 8px}
-header h1:before{content:"";display:inline-block;width:9px;height:27px;margin-right:12px;border-radius:9px;background:#d52c5d;box-shadow:0 0 20px rgba(213,44,93,.8);vertical-align:-3px}
-.sub{font-size:13px;color:#c0aeb8;margin:0;line-height:1.65;max-width:720px}
-.modes{gap:9px;margin:0 0 18px;padding:7px;border:1px solid var(--host-border);border-radius:15px;background:rgba(19,14,20,.88)}
-.mode,.tab,.pick,.bk{border-radius:10px;transition:all .18s ease}
-.mode{padding:11px 14px;font-weight:650}
-.mode.on,.tab.on,.pick.on,.bk.on{background:linear-gradient(135deg,#b51f4b,#761b3a);border-color:#c52b59;color:#fff;box-shadow:0 5px 18px rgba(181,31,75,.2)}
-.tab{background:#17131a}
-.card,.team,.bookbox,.daylist,.esport-panel{background:linear-gradient(145deg,rgba(31,23,31,.98),rgba(17,14,20,.98));border-color:#382431;border-radius:16px;box-shadow:0 10px 28px rgba(0,0,0,.16)}
-.card{padding:19px;margin-bottom:15px}
-.card h2{color:#d9bdc9;font-weight:700;letter-spacing:.15px}
-.primary{background:linear-gradient(135deg,#c62856,#7c173c);border-radius:11px;font-weight:750;box-shadow:0 8px 24px rgba(181,31,75,.22)}
-.primary:hover,.mode:hover,.mini:hover,.ghost:hover,.nav:hover{filter:brightness(1.16);border-color:#a83b60}
-.ghost,.mini,.nav,.dinput,.filter,.search,.tin,.oin,.mrow input,.mrow select,.savebar input,.savebar select,.settle input{border-color:#49303d;background:#100e14;color:#f5f1f4;border-radius:10px}
-.mt{padding:12px 14px;border-color:#33232e}
-.mt:hover{background:rgba(181,31,75,.10)}
-.agenda-date{background:#21151e}
-.weekhead{background:#1b141b}
-.agenda-day.today .agenda-date{color:#ff8bad}
-.scorebig{font-size:clamp(38px,6vw,54px);font-weight:850;color:#fff;text-shadow:0 0 28px rgba(181,31,75,.3)}
-.sc2{border-color:#49303d;background:rgba(181,31,75,.06);border-radius:11px}
-.conf{font-weight:700}
-.c-low{background:rgba(181,31,75,.15);color:#ff789d}
-.c-mid{background:rgba(214,151,73,.14);color:#e7b875}
-.c-high{background:rgba(74,185,139,.14);color:#78d6ac}
-.bar{background:#2a1b25;border:1px solid #49303d;border-radius:9px}
-.seg{font-weight:750}
-.live{color:#ff648a}
-#liveCard .card{border-color:#b51f4b}
-footer{border-color:#382431;color:#95838e}
-.hide{display:none!important}
-/* Cette version est un outil d'analyse sportive, sans interface de paris. */
-#panelHist,#mHist,#panelEsport,#mEsport,.bookbox,#liveCard,#out .card:has(#saveBet),#out .card:has(h2):last-child{display:none!important}
-#out .card:has(.scorebig),#out .card:has(.bar),#out .card:has(.grid2){display:block!important}
+html{background:#09080d;scroll-behavior:smooth}body{background:radial-gradient(ellipse at 50% -15%,rgba(109,23,53,.34),transparent 48%),#09080d;color:var(--host-fg);font-family:Inter,ui-sans-serif,system-ui,sans-serif;min-height:100vh}.wrap{max-width:1120px;padding:34px 24px 76px}
+header{padding:26px 28px;margin-bottom:22px;border:1px solid rgba(181,31,75,.32);border-radius:22px;background:linear-gradient(120deg,rgba(109,23,53,.28),rgba(23,19,26,.94) 58%),#17131a;box-shadow:0 18px 55px #0005}header h1{font-size:clamp(27px,4vw,38px);font-weight:850;letter-spacing:-1.2px;margin:0 0 8px}header h1:before{content:"";display:inline-block;width:9px;height:27px;margin-right:12px;border-radius:9px;background:#d52c5d;box-shadow:0 0 20px #d52c5dcc;vertical-align:-3px}.sub{font-size:13px;color:#c0aeb8;margin:0;line-height:1.65;max-width:720px}
+.modes{gap:9px;margin:0 0 18px;padding:7px;border:1px solid var(--host-border);border-radius:15px;background:#130e14e0}.mode,.tab,.pick,.bk{border-radius:10px;transition:all .18s ease}.mode{padding:11px 14px;font-weight:650}.mode.on,.tab.on,.pick.on,.bk.on{background:linear-gradient(135deg,#b51f4b,#761b3a);border-color:#c52b59;color:#fff;box-shadow:0 5px 18px #b51f4b33}
+.tab{background:#17131a}.card,.team,.bookbox,.daylist,.esport-panel{background:linear-gradient(145deg,#1f171ffe,#110e14fe);border-color:#382431;border-radius:16px;box-shadow:0 10px 28px #0003}.card{padding:19px;margin-bottom:15px}.card h2{color:#d9bdc9;font-weight:700}.primary{background:linear-gradient(135deg,#c62856,#7c173c);border-radius:11px;font-weight:750;box-shadow:0 8px 24px #b51f4b38}.primary:hover,.mode:hover,.mini:hover,.ghost:hover,.nav:hover{filter:brightness(1.16);border-color:#a83b60}.ghost,.mini,.nav,.dinput,.filter,.search,.tin,.oin,.mrow input,.mrow select,.savebar input,.savebar select,.settle input{border-color:#49303d;background:#100e14;color:#f5f1f4;border-radius:10px}.mt{padding:12px 14px;border-color:#33232e}.mt:hover{background:#b51f4b1a}.agenda-date{background:#21151e}.weekhead{background:#1b141b}.agenda-day.today .agenda-date{color:#ff8bad}.scorebig{font-size:clamp(38px,6vw,54px);font-weight:850;color:#fff;text-shadow:0 0 28px #b51f4b4d}.sc2{border-color:#49303d;background:#b51f4b0f;border-radius:11px}.conf{font-weight:700}.c-low{background:#b51f4b26;color:#ff789d}.c-mid{background:#d6974924;color:#e7b875}.c-high{background:#4ab98b24;color:#78d6ac}.bar{background:#2a1b25;border:1px solid #49303d;border-radius:9px}.live{color:#ff648a}#liveCard .card{border-color:#b51f4b}footer{border-color:#382431;color:#95838e}.hide{display:none!important}
+/* Hide legacy wagering and external bookmaker panels in this sports-analysis edition */
+#panelHist,#mHist,#panelEsport,#mEsport,.bookbox,#liveCard,#out .card:has(#saveBet){display:none!important}
 @media(max-width:700px){.wrap{padding:16px 12px 54px}header{padding:21px 18px;border-radius:17px}.modes{display:grid;grid-template-columns:1fr 1fr}.mode{font-size:12px;padding:10px 7px}.teams{gap:8px}.card{padding:14px}.mt{grid-template-columns:46px 1fr auto 1fr;padding:9px 8px}}
-
 </style>
 </head>
 <body>
 <div class="wrap">
 <header><h1>PRONO</h1><p class="sub">Centre d’analyse footballistique · scores estimés, forme récente, probabilités statistiques et suivi des rencontres en direct. Données disponibles via ESPN et Sofascore.</p></header>
 <div class="tabs" id="tabs"></div>
-<div class="modes"><button class="mode on" id="mDay">Programme</button><button class="mode" id="mTeam">Analyse par équipe</button></div>
+<div class="modes"><button class="mode on" id="mDay">Programme</button><button class="mode" id="mTeam">Recherche</button></div>
 <section id="panelDay">
 <div class="datebar"><button class="nav" id="prev" title="Semaine précédente">‹</button><input type="date" id="date" class="dinput" title="Choisir une date de la semaine"><button class="nav" id="next" title="Semaine suivante">›</button><button class="mini" id="today">Cette semaine</button><input id="filter" class="filter" placeholder="Filtrer par compétition..."></div>
 <div id="goalToast" class="goaltoast" role="status" aria-live="polite"></div><div class="livebar"><span id="liveInfo"></span><label><input type="checkbox" id="liveOnly"> En direct seulement</label><label><input type="checkbox" id="auto" checked> Direct 10 s</label><button class="mini" id="refresh">↻ Actualiser</button></div>
