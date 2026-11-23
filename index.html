@@ -184,12 +184,65 @@ input,select,textarea,.ghost,.mini,.nav,.dinput,.filter,.search,.tin,.oin{
 }
 @media(max-width:700px){body:before,body:after{filter:blur(52px);opacity:.5}header,.card,.team,.daylist,.modes{-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}}
 
+
+/* PRONO mobile-first dashboard refresh */
+:root{--host-primary:#d72f61;--host-card:#171820;--host-border:#30313d}
+body{background:radial-gradient(ellipse at 12% 0%,rgba(190,35,83,.24),transparent 34%),radial-gradient(ellipse at 100% 42%,rgba(87,48,130,.16),transparent 38%),#090a10}
+.wrap{max-width:1160px;padding:22px 22px 112px}
+.prono-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 2px 20px;margin:0 0 14px;border:0;border-radius:0;background:transparent!important;box-shadow:none!important;overflow:visible}
+.prono-top:before,.prono-top:after{display:none}
+.brand-lockup{display:flex;align-items:center;gap:12px}
+.brand-mark{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(145deg,#f14a78,#8e1e4a 62%,#351426);font-size:26px;font-weight:950;color:#fff;box-shadow:0 8px 26px #c72c5a55,inset 0 1px #ffffff55;transform:rotate(-5deg)}
+.brand-mark span{color:#ffd4df}
+.prono-top h1{font-size:21px;letter-spacing:2px;font-weight:900;margin:0}
+.prono-top .sub{font-size:9px;letter-spacing:2px;font-weight:800;color:#a99baa;margin:3px 0 0}
+.top-actions{display:flex;align-items:center;gap:9px}
+.status-pill{font-size:9px;letter-spacing:1px;color:#a8e6c5;border:1px solid #3c8b6655;background:#15332655;border-radius:30px;padding:8px 10px}
+.status-pill i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#58d99a;box-shadow:0 0 10px #58d99a;margin-right:6px}
+.top-actions .mini{width:40px;height:40px;border-radius:50%;font-size:18px}
+.welcome-strip{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:23px 24px;margin:0 0 20px;border:1px solid #593047;border-radius:22px;background:linear-gradient(115deg,#24121f 0%,#17151f 58%,#11131d 100%);box-shadow:0 18px 50px #0005}
+.welcome-strip:after{content:"";position:absolute;width:220px;height:220px;right:-55px;top:-100px;border-radius:50%;background:radial-gradient(circle,#d72f6144,transparent 68%);filter:blur(6px)}
+.welcome-strip .eyebrow{font-size:9px;font-weight:850;letter-spacing:2px;color:#f0789b}
+.welcome-strip h2{font-size:clamp(21px,3.5vw,31px);line-height:1.12;letter-spacing:-.8px;margin:9px 0 7px;color:#fff}
+.welcome-strip p{font-size:12px;line-height:1.55;color:#b6abb8;margin:0;max-width:530px}
+.welcome-orb{flex:none;width:82px;height:82px;display:grid;place-items:center;border-radius:26px;border:1px solid #f18bab55;background:linear-gradient(145deg,#d72f6144,#ffffff08);font-size:38px;font-weight:950;color:#ffb3c8;text-shadow:0 0 24px #ed4e7c;transform:rotate(8deg)}
+#tabs{display:flex;gap:8px;overflow-x:auto;flex-wrap:nowrap;padding:2px 1px 12px;margin-bottom:8px;scrollbar-width:none}
+#tabs::-webkit-scrollbar{display:none}
+#tabs .tab{flex:0 0 auto;padding:10px 15px;border-radius:13px;background:#171820;border:1px solid #30313d;color:#b4b2bf;font-weight:750}
+#tabs .tab.on{background:linear-gradient(135deg,#e43c6d,#8e214a);border-color:#f16b91;color:white;box-shadow:0 7px 20px #c52c5a44}
+.modes{background:#12131b!important;border:1px solid #30313d!important;border-radius:16px!important;padding:5px!important;backdrop-filter:blur(16px)}
+.mode{border:0!important;border-radius:11px!important}
+.card,.team,.daylist,.esport-panel{border-radius:18px!important;background:linear-gradient(145deg,rgba(29,30,40,.96),rgba(17,18,26,.96))!important;border:1px solid #343441!important;box-shadow:0 12px 34px #0004!important}
+.card h2{color:#f2d7e1}
+.datebar{gap:8px}
+.bottom-nav{position:fixed;z-index:30;left:50%;bottom:12px;transform:translateX(-50%);width:min(720px,calc(100% - 24px));display:grid;grid-template-columns:repeat(6,1fr);gap:2px;padding:9px 7px calc(9px + env(safe-area-inset-bottom));border:1px solid #ffffff16;border-radius:20px;background:rgba(18,18,25,.88);-webkit-backdrop-filter:blur(24px) saturate(150%);backdrop-filter:blur(24px) saturate(150%);box-shadow:0 15px 45px #0009}
+.bottom-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:0;padding:5px 1px;border:0;background:transparent;color:#92919f;font:inherit;cursor:pointer;border-radius:12px}
+.bottom-item span{font-size:20px;line-height:1.1;font-weight:800}
+.bottom-item small{font-size:9px;font-weight:750;white-space:nowrap}
+.bottom-item.active{color:#ff648d;background:#d72f6117}
+.bottom-item.active span{text-shadow:0 0 15px #f14a78}
+footer{padding-bottom:16px}
+@media(max-width:700px){
+ .wrap{padding:14px 13px 120px}
+ .prono-top{padding:3px 1px 15px;margin-bottom:9px}
+ .brand-mark{width:43px;height:43px;border-radius:14px;font-size:23px}
+ .prono-top h1{font-size:19px}
+ .status-pill{font-size:8px;padding:7px 8px}
+ .welcome-strip{padding:20px 17px;border-radius:19px;margin-bottom:14px}
+ .welcome-orb{width:62px;height:62px;border-radius:20px;font-size:29px}
+ #tabs{margin-left:-1px;margin-right:-1px}
+ .bottom-nav{bottom:8px;width:calc(100% - 16px);border-radius:17px}
+ .bottom-item small{font-size:8px}
+}
+@media(max-width:380px){.status-pill{display:none}.welcome-orb{width:52px;height:52px}.bottom-item span{font-size:18px}}
+
 </style>
 </head>
 <body>
 <div class="wrap">
-<header><h1>PRONO</h1><p class="sub">Centre d’analyse footballistique · scores estimés, forme récente, probabilités statistiques et suivi des rencontres en direct. Données disponibles via ESPN et Sofascore.</p></header>
+<header class="prono-top"><div class="brand-lockup"><div class="brand-mark">P<span>.</span></div><div><h1>PRONO</h1><p class="sub">SPORTS INTELLIGENCE</p></div></div><div class="top-actions"><span class="status-pill"><i></i> DONNÉES SPORTIVES</span><button class="mini" id="refreshTop" aria-label="Actualiser">↻</button></div></header>
 <div class="tabs" id="tabs"></div>
+<div class="welcome-strip"><div><span class="eyebrow">CENTRE SPORTIF</span><h2>Le jeu se lit dans les chiffres.</h2><p>Calendrier, forme des équipes et analyses statistiques réunis au même endroit.</p></div><div class="welcome-orb">P</div></div>
 <div class="modes"><button class="mode on" id="mDay">Programme</button><button class="mode" id="mTeam">Recherche</button></div>
 <section id="panelDay">
 <div class="datebar"><button class="nav" id="prev" title="Semaine précédente">‹</button><input type="date" id="date" class="dinput" title="Choisir une date de la semaine"><button class="nav" id="next" title="Semaine suivante">›</button><button class="mini" id="today">Cette semaine</button><input id="filter" class="filter" placeholder="Filtrer par compétition..."></div>
@@ -227,6 +280,14 @@ input,select,textarea,.ghost,.mini,.nav,.dinput,.filter,.search,.tin,.oin{
 <div class="actions"><button class="primary" id="calc">Calculer les estimations</button><button class="ghost" id="manual">Saisie manuelle</button></div>
 <div id="liveCard"></div><div id="out"></div>
 <footer>Les probabilités sont des estimations statistiques, pas des garanties. Les statistiques (possession, tirs, corners, cartons, etc.) s’affichent uniquement lorsque le fournisseur les transmet. Les résultats sont actualisés automatiquement et les paris enregistrés sont réglés dès que le score final est disponible. Handball : dépend de la disponibilité de Sofascore.</footer>
+<nav class="bottom-nav" aria-label="Navigation principale">
+<button class="bottom-item active" data-dest="home"><span>⌂</span><small>Accueil</small></button>
+<button class="bottom-item" data-dest="matches"><span>◷</span><small>Matchs</small></button>
+<button class="bottom-item" data-dest="live"><span>◉</span><small>Direct</small></button>
+<button class="bottom-item" data-dest="analysis"><span>✧</span><small>PRONO IA</small></button>
+<button class="bottom-item" data-dest="leagues"><span>♜</span><small>Ligues</small></button>
+<button class="bottom-item" data-dest="more"><span>•••</span><small>Plus</small></button>
+</nav>
 </div>
 <script>
 const API='/api/espn?path=';
@@ -541,6 +602,20 @@ $('auto').onchange=setAuto;setAuto();
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&$('auto').checked&&!$('panelDay').classList.contains('hide'))loadDay(true);});
 setInterval(()=>{if(!document.hidden&&hist().some(x=>!x.settled&&x.eid))autoSettle().then(c=>{if(c&&!$('panelHist').classList.contains('hide'))renderHist(true);});},120000);
 buildTabs();buildBooks();$('date').value=localIso(new Date());loadDay();
+
+/* Bottom navigation actions */
+document.querySelectorAll('.bottom-item').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.bottom-item').forEach(x=>x.classList.toggle('active',x===btn));
+ const dest=btn.dataset.dest;
+ if(dest==='home'){window.scrollTo({top:0,behavior:'smooth'});showMainPanel('day');}
+ if(dest==='matches'){showMainPanel('day');$('panelDay').scrollIntoView({behavior:'smooth',block:'start'});}
+ if(dest==='live'){showMainPanel('day');$('liveOnly').checked=true;$('liveOnly').dispatchEvent(new Event('change'));$('panelDay').scrollIntoView({behavior:'smooth',block:'start'});}
+ if(dest==='analysis'){showMainPanel('team');$('panelTeam').scrollIntoView({behavior:'smooth',block:'start'});}
+ if(dest==='leagues'){showMainPanel('day');$('filter').focus();$('panelDay').scrollIntoView({behavior:'smooth',block:'start'});}
+ if(dest==='more'){$('season').scrollIntoView({behavior:'smooth',block:'center'});}
+}));
+$('refreshTop').onclick=()=>$('refresh').click();
+
 </script>
 </body>
 </html>
